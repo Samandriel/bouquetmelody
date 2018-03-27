@@ -1,0 +1,91 @@
+.feature-service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: all .2s ease-out;
+  overflow: hidden;
+  z-index: 100;
+}
+.mask-text {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  top:40%;
+  margin: 0;
+  color: #fd79a8;
+  font-weight: bolder;
+}
+.blur-mask {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/bg_flower_7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  transform: scale(1.1);
+  display: block;
+  position: absolute;
+}
+#delivery-banner {
+  background-image: url("./images/flower-delivery.jpg");
+  background-size: contain;
+  background-position: 10% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  border: #b2bec3 solid 1px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.banner-text {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  display: grid;
+  text-align: center;
+  color: #000;
+  position: absolute;
+}
+.banner-text h3 {
+  margin: auto;
+}
+
+#flora-design-banner {
+  background-image: url("./images/floristry.jpg");
+  background-size: cover;
+  background-position: -80px 75%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  border: #b2bec3 solid 1px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+#delivery-banner:hover {
+  border: 1px solid #fd79a8;
+}
+#flora-design-banner:hover {
+  border: 1px solid #fd79a8;
+}
+#delivery-banner:hover > .mask {
+  top: 0;
+  transition: all .2s ease-out;
+}
+#flora-design-banner:hover > .mask {
+  top: 0;
+  transition: all .2s ease-out;
+}

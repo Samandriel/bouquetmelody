@@ -1,0 +1,40 @@
+.contact {
+  background-image: url("./images/bg_flower_7.jpg");
+  border-radius: 0;
+  padding:50px;
+}
+.contact::before {
+  content: "";
+  background-color: rgba(255,255,255, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+.contact-info p {
+  margin: 0;
+}
+.map {
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0 3px;
+  border: 10px solid #fff;
+  box-sizing: border-box;
+}
+.contact-button {
+  display: block;
+  text-align: center;
+}
+
+.contact-button button {
+  width: 150px;
+  border-radius: 0;
+  margin: 0 5px; 
+}
+.contact label {
+  font-weight: bold;
+  color: #8395a7;
+}

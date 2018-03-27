@@ -1,0 +1,71 @@
+.occasions {
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0 0 3px;
+}
+.occasion-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #b2bec3;
+  height: 400px;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 0 5px; */
+  /* padding: 10px; */
+}
+.occasion-item:hover {
+  border: 1px solid #fd79a8;
+  /* transition: ease-in-out 0.2s; */
+}
+.occasion-item-link {
+  display: block;
+  color: initial;
+  margin: 2em 0;
+}
+.occasion-item-link:first-child {
+  margin-top: 0;
+}
+.occasion-item-link:last-child {
+  margin-bottom: 0;
+}
+.occasion-item-link:hover {
+  text-decoration: none;
+  color: #fd79a8;
+  /* transition: ease-in-out 0.2s; */
+}
+.occasion-item-image {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  /* box-shadow: rgba(0, 0, 0, 0.4) -2px 0 5px; */
+}
+.occasion-item-text {
+  display: grid;
+  margin: auto;
+  padding: 50px;
+  text-justify: distribute;
+  /* font-family: 'Abril Fatface', cursive; */
+  /* font-family: 'Great Vibes', cursive; */
+}
+.occasion-item-text h1 {
+  font-size: 3em;
+}
+
+
+
+.occasion-item-image#item1 {
+  background-image: url("./images/occasions/anniversary.jpg");
+  background-position-x: 40%;
+}
+.occasion-item-image#item2 {
+  background-image: url("./images/occasions/wedding.jpg");
+}
+.occasion-item-image#item3 {
+  background-image: url("./images/occasions/dating.jpg");
+}
+.occasion-item-image#item4 {
+  background-image: url("./images/occasions/visiting.jpg");
+}
+.occasion-item-image#item5 {
+  background-image: url("./images/occasions/gratitude.jpg");
+}
+.occasion-item-image#item6 {
+  background-image: url("./images/occasions/congratulation.gif");
+}
